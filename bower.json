@@ -1,0 +1,8 @@
+{
+  "name": "gulp-webapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "foundation": "~5.4.7"
+  }
+}
