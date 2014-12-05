@@ -3,3 +3,9 @@
 
 #Cached .tmp Files from Gulp
 .tmp
+
+# Logs
+logs
+*.log
+
+
