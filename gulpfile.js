@@ -15,7 +15,8 @@ gulp.task('styles', function () {
     .pipe($.plumber())
     .pipe($.rubySass({
       style: 'expanded',
-      precision: 10
+      precision: 10,
+      loadPath: 'bower_components/foundation/scss'
     }))
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
     .pipe(gulp.dest('.tmp/styles'));
@@ -110,12 +111,14 @@ gulp.task('watch', ['connect', 'views'], function () {
   // watch for changes
   gulp.watch([
     '.tmp/*.html',
+    'app/includes/*.jade',
     '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
     'app/images/**/*'
   ]).on('change', $.livereload.changed);
 
   gulp.watch('app/*.jade', ['views']);
+  gulp.watch('app/includes/*.jade', ['views']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('bower.json', ['wiredep']);
 });
