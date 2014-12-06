@@ -1,11 +1,5 @@
-#Cached Sass Files from Gulp
 .sass-cache
-
-#Cached .tmp Files from Gulp
 .tmp
-
-# Logs
-logs
-*.log
+node_modules
 
 
