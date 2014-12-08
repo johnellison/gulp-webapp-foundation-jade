@@ -18,3 +18,7 @@ Please see [gulpfile.js](gulpfile.js) for up to date information on what feature
 ## Purpose
 
 This repo is meant to provide a basic starting point for a front-end web project using the latest version of Foundation alongside the Jade templating language.
+
+## Future
+
+I will be turning this into a Yeoman generator once I get a good feature set I'm happy with.
