@@ -1,0 +1,41 @@
+a.m-play-button {
+ 	@media #{$small-up}{
+		width: 4rem;
+		height: 4rem;
+		font-size: 2.1rem;
+		line-height: 3.7rem	;
+		text-indent: .5rem;
+		margin-top: 0;
+		color: #000;
+		background-color: rgba(255, 255, 255, 0.3);
+		border: 2px solid #000;
+		border-radius: 50%;
+		display: inline-block;
+		cursor: pointer;
+		background-image: none;
+		text-rendering: optimizeLegibility !important;
+		font-smoothing: antialiased !important;
+	}
+
+	@media #{$medium-up} {
+		margin-top: -1rem;
+		width: 4.5rem;
+		height: 4.5rem;
+		padding-top: .35rem;
+
+		@include global-hover();
+	}
+
+	@media #{$large-up} {
+		margin-top: 0rem;
+	}
+
+	@media #{$xlarge-up} {
+		margin-top: 1rem;
+	}
+
+
+
+}
+
+	

@@ -1,0 +1,33 @@
+//Mixins
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: linear-gradient(90deg, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=90,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+@mixin global-hover() {
+  transition: all .2s ease-in-out;
+  &:hover {
+      transform: scale(1.009);
+      box-shadow: 2px 2px 7px $body-font-color;
+    }
+}
+
+// Typography
+.accent-color {
+  color: $red-tint;
+}
+
+.lead-color {
+  color: $blue-tint;
+}
+
+.button {
+  @include button($radius: $global-radius);
+}
+  
+p {
+  line-height: 1.4;
+}
+

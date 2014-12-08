@@ -1,0 +1,51 @@
+[data-magellan-expedition] {
+  padding: 0;
+}
+
+.icon-bar > * i + label,
+.icon-bar > * img + label {
+  @media #{$small-up} {
+    margin-top: -.5rem;
+  }
+}
+
+.icon-bar.hide-for-large-up {
+  @media #{$small-up} {
+    background-color: $blue-grey-shade;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    border-top: 3px solid white;
+  }
+
+  > * {
+   padding: .2rem; 
+
+   i + label {
+    @media #{$medium-up} { 
+      font-size: 1.1rem;
+    }
+   }
+  }
+}
+
+.icon-bar.show-for-large-up {
+  height: 3.8rem;
+  border: none;
+  background-color: $blue-grey-shade;
+
+  > * {
+    padding: .5rem;
+  }
+
+  i, label {
+    color: white;
+  }
+
+  i + label {
+    margin-left: .8rem;
+    font-size: 1.1rem;
+  }
+}
+
+  

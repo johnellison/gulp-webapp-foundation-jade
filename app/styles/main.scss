@@ -1,27 +1,46 @@
 // bower:scss
 // endbower
 
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-}
+// Make sure the charset is set appropriately
+@charset "UTF-8";
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+// Global Foundation Settings
+@import "settings";
+
+// You can import only specific elements by adjusting the import below
+@import "foundation";
+
+//01-base
+ @import "01-base/config";
+ @import "01-base/webicons";
+
+//02-layout
+@import "02-layout/l-index";
+@import "02-layout/l-layout";
+@import "02-layout/l-sidebar";
+
+//03-modules
+@import "03-modules/m-arrow";
+@import "03-modules/m-story"; 
+@import "03-modules/m-video";
+@import "03-modules/m-top-bar";
+@import "03-modules/icon-bar";
+@import "03-modules/m-portfolio";
+@import "03-modules/m-block-grid";
+@import "03-modules/m-services";
+@import "03-modules/m-cta";
+@import "03-modules/m-testimonial";
+
+//04-states
+//@import "04-states/s-index";
+
+//05-themes
+// @import "05-themes/themes";
+
+//debug
+// @import "01-base/debug";
+
+
 
 .browsehappy {
   margin: 0.2em 0;

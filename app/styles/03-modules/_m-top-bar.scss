@@ -1,0 +1,19 @@
+.top-bar-section {
+  display: table;
+  margin: 0 auto;
+
+  ul li {
+    background: none;
+    &:hover {
+      border-bottom: 1px solid $body-font-color;
+    }
+    i {
+      margin-right: .5rem;
+    }
+  }
+} 
+
+.top-bar {
+  margin-bottom: -55px;
+}
+

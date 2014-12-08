@@ -1,0 +1,8 @@
+.twitter-follow-button {
+  @media #{$medium-up} {
+   margin-top: 1.2rem;
+  }
+  @media #{$large-up} {
+   margin-top: .8rem;
+  }
+}

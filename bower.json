@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    "foundation": "~5.4.7"
+    "foundation": "zurb/bower-foundation",
+    "foundation-icon-fonts": "zurb/foundation-icon-fonts"
   }
 }
