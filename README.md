@@ -9,11 +9,11 @@ Please see [gulpfile.js](gulpfile.js) for up to date information on what feature
 
 * [Jade](http://jade-lang.com/) templating
 * CSS Autoprefixing
-* Built-in preview server with livereload (localhost)
+* Built-in preview server with BrowserSync
 * Automagically compile Sass
 * Automagically lint your scripts
 * Awesome image optimization
-* Automagically wire-up dependencies installed with [Bower](http://bower.io) *(when `gulp watch` or `gulp wiredep`)*
+* Automagically wire-up dependencies installed with [Bower](http://bower.io) *(when `gulp serve` or `gulp wiredep`)*
 
 ## Purpose
 
