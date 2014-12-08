@@ -5,37 +5,20 @@
 @charset "UTF-8";
 
 // Global Foundation Settings
-@import "settings";
+@import "foundation/settings";
 
 // You can import only specific elements by adjusting the import below
 @import "foundation";
 
 //01-base
- @import "01-base/config";
- @import "01-base/webicons";
 
 //02-layout
-@import "02-layout/l-index";
-@import "02-layout/l-layout";
-@import "02-layout/l-sidebar";
 
 //03-modules
-@import "03-modules/m-arrow";
-@import "03-modules/m-story"; 
-@import "03-modules/m-video";
-@import "03-modules/m-top-bar";
-@import "03-modules/icon-bar";
-@import "03-modules/m-portfolio";
-@import "03-modules/m-block-grid";
-@import "03-modules/m-services";
-@import "03-modules/m-cta";
-@import "03-modules/m-testimonial";
 
 //04-states
-//@import "04-states/s-index";
 
 //05-themes
-// @import "05-themes/themes";
 
 //debug
 // @import "01-base/debug";

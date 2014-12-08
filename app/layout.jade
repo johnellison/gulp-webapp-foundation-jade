@@ -4,20 +4,17 @@ html(lang='')
     meta(charset='utf-8')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
-    title John Ellison | Storyteller &amp; UX Designer
+    title Gulp Webapp -- Foundation, Jade
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css styles/vendor.css
     // bower:css
     link(rel='stylesheet', href='../bower_components/foundation/css/foundation.css')
-    link(rel='stylesheet', href='../bower_components/foundation-icon-fonts/foundation-icons.css')
     // endbower
     // endbuild
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-    script(src='//use.typekit.net/bzq0alk.js')
-    script.
-      try{Typekit.load();}catch(e){}
+
   body
     //if lt IE 10
       p.browsehappy
@@ -29,14 +26,7 @@ html(lang='')
     
     block content 
       
-    // Google Analytics
-    script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-56831522-1', 'auto');
-      ga('send', 'pageview');
+    // Google Analytics script here
     // build:js scripts/vendor.js
     // bower:js
     script(src='../bower_components/modernizr/modernizr.js')
