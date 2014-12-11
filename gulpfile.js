@@ -15,10 +15,11 @@ gulp.task('views', function () {
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
     .pipe($.plumber())
-    .pipe($.rubySass({
-      style: 'expanded',
+    .pipe($.sass({
+      errLogToConsole: true,
+      style: 'nested',
       precision: 10,
-      loadPath: 'bower_components/foundation/scss'
+      includePaths: ['bower_components/foundation/scss']
     }))
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
     .pipe(gulp.dest('.tmp/styles'));
