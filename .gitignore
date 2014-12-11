@@ -1,5 +1,6 @@
 .sass-cache
 .tmp
 node_modules
+dist/
 
 
