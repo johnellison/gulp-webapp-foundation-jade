@@ -18,7 +18,7 @@ gulp.task('styles', function () {
     .pipe($.sass({
       errLogToConsole: true,
       style: 'nested',
-      precision: 10,
+      precision: 9,
       includePaths: ['bower_components/foundation/scss']
     }))
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
